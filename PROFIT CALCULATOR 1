@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner hi =new Scanner (System.in);
+        int x = hi.nextInt();
+        int a = hi.nextInt();
+        int b = hi.nextInt();
+
+        float cost = x * a;
+        float delivery = (x * b) + 100;
+        float profit = cost - delivery;
+
+        System.out.println("Number of copies sold:" + x);
+        System.out.println("Cost of each copy:" + a);
+        System.out.println("Cost spent by agency on each newspaper:" + b);
+        System.out.printf("The profit obtained is Rs.%.2f\n", profit);
+
+    }
+}
