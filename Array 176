@@ -6,14 +6,14 @@ public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        int n = sc.nextInt(); // Number of buildings
+        int n = sc.nextInt();
         int[] doors = new int[n];
         
         for (int i = 0; i < n; i++) {
-            doors[i] = sc.nextInt(); // Door numbers
+            doors[i] = sc.nextInt();
         }
         
-        int target = sc.nextInt(); // Friend's door number
+        int target = sc.nextInt(); 
         
         int index = -1;
         for (int i = 0; i < n; i++) {
