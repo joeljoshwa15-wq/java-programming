@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt(); // Number of buildings
+        int[] doors = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            doors[i] = sc.nextInt(); // Door numbers
+        }
+        
+        int target = sc.nextInt(); // Friend's door number
+        
+        int index = -1;
+        for (int i = 0; i < n; i++) {
+            if (doors[i] == target) {
+                index = i;
+                break;
+            }
+        }
+        
+        if (index == -1) {
+            System.out.println("-1");
+        } else {
+            System.out.printf("Door Number is %03d-DN\n", index);
+        }
+    }
+}
