@@ -7,15 +7,15 @@ import java.util.regex.*;
 public class solution {
 
     public static void main(String[] args) {
-        Scanner sk = new Scanner(System.in);
-        int z= sk.nextInt();
+        Scanner JD = new Scanner(System.in);
+        int z= JD.nextInt();
         if(z<=0){
             System.out.println("Invalid Input");
         } else{
             int[]ages = new int[z];
             int invalidCount = 0;
           for(int i=0;i<z;i++){
-            ages[i]=sk.nextInt();
+            ages[i]=JD.nextInt();
             if(ages[i] < 0){
              invalidCount++;
             }
